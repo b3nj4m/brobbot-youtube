@@ -1,6 +1,6 @@
 {
   "name": "brobbot-youtube",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Brobbot script to search for YouTube videos",
   "main": "index.js",
   "scripts": {
