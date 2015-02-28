@@ -22,7 +22,6 @@ module.exports = function(robot) {
         }
 
         var video = msg.random(videos);
-        console.log(video.link);
         video.link.forEach(function(link) {
           if (link.rel === "alternate" && link.type === "text/html") {
             msg.send(link.href);
