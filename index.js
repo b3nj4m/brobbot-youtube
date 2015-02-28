@@ -5,7 +5,8 @@ module.exports = function(robot) {
   robot.helpCommand("brobbot youtube [me] `query`", "Searches YouTube for `query` and returns the video link.");
 
   robot.respond(/^youtube( me)? (.*)/i, function(msg) {
-    var query = msg.match[3];
+    var query = msg.match[2];
+
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance",
